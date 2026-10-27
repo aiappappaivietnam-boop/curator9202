@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Curator 9202 — Limited Furniture Design</title>
+<meta name="description" content="Nội thất phiên bản giới hạn: mỗi thiết kế chỉ sản xuất đúng một container. Hết container, thiết kế đóng lại và chuyển sang thiết kế mới.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Be+Vietnam+Pro:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=12">
+</head>
+<body>
+
+<header class="topbar">
+  <a href="#top" class="brand">CURATOR<span>9202</span><small class="tagline">Limited Furniture Design</small></a>
+  <nav>
+    <a href="#collections">Thiết kế</a>
+    <a href="#concept">Concept bán hàng</a>
+    <a href="#story">Làng nghề</a>
+  </nav>
+  <button class="cart-btn" id="cartBtn" aria-label="Giỏ hàng">Giỏ hàng <span id="cartCount">0</span></button>
+</header>
+
+<div id="home">
+<section class="hero" id="top">
+  <div class="hero-text">
+    <p class="eyebrow">Phiên bản giới hạn · Một container · Một thiết kế</p>
+    <h1>Đồ nội thất <em>đương đại</em>, sinh ra từ làng nghề Việt.</h1>
+    <p class="lead">Mỗi thiết kế chỉ được sản xuất đúng một container. Khi container đóng, thiết kế đó dừng lại vĩnh viễn và nhường chỗ cho thiết kế tiếp theo.</p>
+    <div class="hero-actions">
+      <a href="#collections" class="btn primary">Xem thiết kế đang bán</a>
+      <a href="#concept" class="btn ghost">Concept bán hàng</a>
+    </div>
+  </div>
+  <div class="hero-art" aria-hidden="true">
+    <img src="images/hero.jpg" alt="Nội thất thủ công đương đại từ làng nghề Việt">
+    <span class="hero-tag">Container 04 · Đang sản xuất</span>
+  </div>
+</section>
+
+<section class="rules" aria-label="Quy tắc">
+  <div><strong>01</strong><span>Một thiết kế = một container</span></div>
+  <div><strong>02</strong><span>Container đầy là thiết kế đóng vĩnh viễn</span></div>
+  <div><strong>03</strong><span>Không tái bản, không bổ sung sau khi đóng</span></div>
+  <div><strong>04</strong><span>Không giới hạn loại sản phẩm</span></div>
+</section>
+
+<section id="collections" class="section">
+  <div class="section-head">
+    <p class="eyebrow">Thiết kế</p>
+    <h2>Các phiên bản giới hạn</h2>
+    <p>Đếm ngược theo từng container. Khi số lượng về 0, thiết kế được chuyển sang trạng thái đã đóng.</p>
+  </div>
+  <div class="filters" role="tablist">
+    <button class="filter active" data-filter="all">Tất cả</button>
+    <button class="filter" data-filter="open">Đang bán</button>
+    <button class="filter" data-filter="closed">Khép lại · Muốn cũng không còn bán</button>
+  </div>
+  <div class="grid" id="grid"></div>
+</section>
+
+
+
+<section id="story" class="section story">
+  <div class="section-head">
+    <p class="eyebrow">Làng nghề</p>
+    <h2>Bốn làng nghề Việt Nam đang làm nên những thiết kế này.</h2>
+    <p>Mỗi thiết kế bắt nguồn từ một làng nghề, giữ lại kỹ thuật và chất liệu của làng, rồi được tinh giản cho không gian sống hiện đại.</p>
+  </div>
+  <div class="village-grid">
+    <a class="village" href="#lang-nghe/dong-ky">
+      <img src="images/dong-ky.jpg" alt="Làng chạm gỗ Đồng Kỵ" loading="lazy">
+      <div class="village-body">
+        <p class="origin">Bắc Ninh</p>
+        <h3>Làng chạm gỗ Đồng Kỵ</h3>
+        <p>Nghề chạm khắc gỗ lâu đời, nổi tiếng với các đường gờ và hoa văn chạm tay. Thiết kế: Tủ Đồng Kỵ.</p>
+        <span class="village-link">Đọc câu chuyện làng →</span>
+      </div>
+    </a>
+    <a class="village" href="#lang-nghe/bat-trang">
+      <img src="images/bat-trang.jpg" alt="Làng gốm Bát Tràng" loading="lazy">
+      <div class="village-body">
+        <p class="origin">Hà Nội</p>
+        <h3>Làng gốm Bát Tràng</h3>
+        <p>Nghề gốm sứ truyền thống với men và dáng bầu quen thuộc. Thiết kế: Ghế đôn Bát Tràng.</p>
+        <span class="village-link">Đọc câu chuyện làng →</span>
+      </div>
+    </a>
+    <a class="village" href="#lang-nghe/van-phuc">
+      <img src="images/van-phuc.jpg" alt="Làng lụa Vạn Phúc" loading="lazy">
+      <div class="village-body">
+        <p class="origin">Hà Nội</p>
+        <h3>Làng lụa Vạn Phúc</h3>
+        <p>Nghề dệt lụa tơ tằm với những tấm lụa mềm, ánh sáng dịu. Thiết kế: Bình phong Vạn Phúc.</p>
+        <span class="village-link">Đọc câu chuyện làng →</span>
+      </div>
+    </a>
+    <a class="village" href="#lang-nghe/phu-vinh">
+      <img src="images/phu-vinh.jpg" alt="Làng mây tre đan Phú Vinh" loading="lazy">
+      <div class="village-body">
+        <p class="origin">Hà Nội</p>
+        <h3>Làng mây tre đan Phú Vinh</h3>
+        <p>Nghề đan mây tre cổ, sợi đan chắc và nhẹ. Thiết kế: Ghế mây tre Phú Vinh.</p>
+        <span class="village-link">Đọc câu chuyện làng →</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2026 Curator 9202 · Limited Furniture Design</p>
+  <p class="credits">Ảnh minh họa: Wikimedia Commons / Openverse — <a href="https://commons.wikimedia.org/wiki/File:Gh%E1%BA%BF_g%E1%BB%91m_voi_men_xanh_%26_Ch%E1%BA%ADu_g%E1%BB%91m_r%E1%BB%93ng_ph%C3%B9_%C4%91i%C3%AAu.jpg" target="_blank" rel="noopener">Ghế gốm voi men xanh</a> (CC BY-SA 4.0) · <a href="https://commons.wikimedia.org/wiki/File:S%E1%BA%A3n_ph%E1%BA%A9m_M%C3%A2y_tre_%C4%91an_Tr%C3%A0.jpg" target="_blank" rel="noopener">Sản phẩm Mây tre đan Trà</a> (CC BY-SA 4.0) · <a href="https://commons.wikimedia.org/wiki/File:Cabinet,_Lima,_Peru,_c._1680-1700,_mahogany,_mother-of-pearl,_ivory,_tortoiseshell_-_Dallas_Museum_of_Art_-_DSC04729.jpg" target="_blank" rel="noopener">Cabinet, Lima, Peru</a> (Dallas Museum of Art, Public domain) · <a href="https://commons.wikimedia.org/wiki/File:Bat-Trang-Ceramic-Village8.jpg" target="_blank" rel="noopener">File:Bat-Trang-Ceramic-Village8</a> (Steven C. Price, CC BY-SA 4.0) · <a href="https://commons.wikimedia.org/wiki/File:Screen,_Nguyen_dynasty,_1890,_wood_with_mother_of_pearl_inlay,_view_2_-_National_Museum_of_Vietnamese_History_-_Hanoi,_Vietnam_-_DSC05608.JPG" target="_blank" rel="noopener">File:Screen, Nguyen dynasty, 1890, wood with mother of pearl inlay, view 2 - National Museum of Vietnamese History - Hanoi, Vietnam - DSC05608</a> (Daderot, CC0) · <a href="https://commons.wikimedia.org/wiki/File:Bat-Trang-Ceramic-Village7.jpg" target="_blank" rel="noopener">File:Bat-Trang-Ceramic-Village7</a> (Steven C. Price, CC BY-SA 4.0) · <a href="https://commons.wikimedia.org/wiki/File:Silk_weaving,_2003_Ha_Dong_19.jpg" target="_blank" rel="noopener">File:Silk weaving, 2003 Ha Dong 19</a> (Syced, CC0) · <a href="https://commons.wikimedia.org/wiki/File:Handicraft_products_in_Phu_Vinh_bamboo_and_rattan_village,VietNam.jpg" target="_blank" rel="noopener">File:Handicraft products in Phu Vinh bamboo and rattan village,VietNam</a> (Rin Mamori, CC BY-SA 4.0) · <a href="https://commons.wikimedia.org/wiki/File:Container_Ship_at_the_Hai_Phong_International_Container_Terminal_01.jpg" target="_blank" rel="noopener">File:Container Ship at the Hai Phong International Container Terminal 01</a> (Nathan.cima, CC BY-SA 4.0) · <a href="https://commons.wikimedia.org/wiki/File:National_Museum_Vietnamese_History_72.jpg" target="_blank" rel="noopener">File:National Museum Vietnamese History 72</a> (Gryffindor, CC BY-SA 3.0) · <a href="https://commons.wikimedia.org/wiki/File:Bat-Trang-Ceramic-Village3.jpg" target="_blank" rel="noopener">File:Bat-Trang-Ceramic-Village3</a> (Steven C. Price, CC BY-SA 4.0) · <a href="https://commons.wikimedia.org/wiki/File:Bat-Trang-Ceramic-Village5.jpg" target="_blank" rel="noopener">File:Bat-Trang-Ceramic-Village5</a> (Steven C. Price, CC BY-SA 4.0) · <a href="https://commons.wikimedia.org/wiki/File:Silk_weaving,_2003_Ha_Dong.jpg" target="_blank" rel="noopener">File:Silk weaving, 2003 Ha Dong</a> (Syced, CC0) · <a href="https://commons.wikimedia.org/wiki/File:Handicraft_products_in_Phu_Vinh_bamboo_and_rattan_village,_Viet_Nam.jpg" target="_blank" rel="noopener">File:Handicraft products in Phu Vinh bamboo and rattan village, Viet Nam</a> (Rin Mamori, CC BY-SA 4.0) · <a href="https://commons.wikimedia.org/wiki/File:Handicraft_products_in_Phu_Vinh_bamboo_and_rattan_village,_Ha_Noi,_Viet_Nam.jpg" target="_blank" rel="noopener">File:Handicraft products in Phu Vinh bamboo and rattan village, Ha Noi, Viet Nam</a> (Rin Mamori, CC BY-SA 4.0) · <a href="https://commons.wikimedia.org/wiki/File:Ch%C3%B9a_V%E1%BA%BD_Terminal,_Port_of_H%E1%BA%A3i_Ph%C3%B2ng.JPG" target="_blank" rel="noopener">File:Chùa Vẽ Terminal, Port of Hải Phòng</a> (Phó Nháy, Public domain) · <a href="https://www.flickr.com/photos/38869431@N00/8389943365" target="_blank" rel="noopener">Ben drawing</a> (juhansonin, CC BY 2.0) · <a href="https://commons.wikimedia.org/wiki/File:Millwood_Drying_Yard.jpg" target="_blank" rel="noopener">Millwood Drying Yard</a> (Unknown authorUnknown author, Public domain) · <a href="https://commons.wikimedia.org/wiki/File:Master_artisan_woodcarver_James_M._Liwanagan_October_3_2026_Mogpog_Marinduque_01.jpg" target="_blank" rel="noopener">Master artisan woodcarver James M. Liwanagan October 3 2026 Mogpog Marinduque 01</a> (P1898, CC BY 4.0) · <a href="https://commons.wikimedia.org/wiki/File:Examples_of_Wood_Joints.jpg" target="_blank" rel="noopener">Examples of Wood Joints</a> (Tim Sheerman-Chase, CC BY 4.0) · <a href="https://www.flickr.com/photos/46335096@N07/4996683540" target="_blank" rel="noopener">The finishing shop.</a> (ActiveSteve, CC BY-ND 2.0) · <a href="https://commons.wikimedia.org/wiki/File:Baleen_and_ebony_table_cabinet_attributed_to_Herman_Doomer.jpg" target="_blank" rel="noopener">Baleen and ebony table cabinet attributed to Herman Doomer</a> (Zbrgsd, CC BY-SA 4.0) · <a href="https://commons.wikimedia.org/wiki/File:Standard-plywood-shipping-crate-vol-case.jpg" target="_blank" rel="noopener">Standard-plywood-shipping-crate-vol-case</a> (VCCmatt, CC BY-SA 4.0) · <a href="https://commons.wikimedia.org/wiki/File:Container_loading_with_forklift_at_warehouse_in_Thailand.jpg" target="_blank" rel="noopener">Container loading with forklift at warehouse in Thailand</a> (Goterrestrial, CC BY 4.0) · <a href="https://commons.wikimedia.org/wiki/File:Bill_of_Lading_-_Southern_Railway_Company_front.jpg" target="_blank" rel="noopener">Bill of Lading - Southern Railway Company front</a> (Scanned by SCEhardt on 12-29-2004, Public domain) · <a href="https://commons.wikimedia.org/wiki/File:Howo_A7_in_Vietnam_01.JPG" target="_blank" rel="noopener">Howo A7 in Vietnam 01</a> (Ilya Plekhanov, CC BY-SA 4.0) · <a href="https://commons.wikimedia.org/wiki/File:Loading_palletized_cargo_inside_a_shipping_container.jpg" target="_blank" rel="noopener">Loading palletized cargo inside a shipping container</a> (Goterrestrial, CC BY 4.0) · <a href="https://commons.wikimedia.org/wiki/File:An_Overview_of_Moving_Companies_and_Their_Use_of_Moving_Boxes.jpg" target="_blank" rel="noopener">An Overview of Moving Companies and Their Use of Moving Boxes</a> (brownpau, CC BY 2.0) · <a href="https://commons.wikimedia.org/wiki/File:Gom-su-vu-hoa.jpg" target="_blank" rel="noopener">Gom-su-vu-hoa</a> (Gomsuvuhoa, CC0) · <a href="https://commons.wikimedia.org/wiki/File:Gladstone_Colour_samples_3856.JPG" target="_blank" rel="noopener">Gladstone Colour samples 3856</a> (Photograph by Clem Rutter, Rochester, Kent. (www.clemrutter.net)., CC BY-SA 3.0) · <a href="https://www.flickr.com/photos/52243088@N00/14378391936" target="_blank" rel="noopener">Traditional Pottery in Goa, India</a> (Joel&#x27;s Goa Pics, CC BY-SA 2.0) · <a href="https://www.flickr.com/photos/26209464@N00/33631871236" target="_blank" rel="noopener">Table saw pedestal</a> (simonov, CC BY-SA 2.0) · <a href="https://commons.wikimedia.org/wiki/File:Costume,_Cham,_An_Giang,_1956,_view_2,_brocade_with_silk_skirt_-_Vietnamese_Women%27s_Museum_-_Hanoi,_Vietnam_-_DSC04096.JPG" target="_blank" rel="noopener">Costume, Cham, An Giang, 1956, view 2, brocade with silk skirt - Vietnamese Women&#x27;s Museum - Hanoi, Vietnam - DSC04096</a> (Daderot, CC0) · <a href="https://commons.wikimedia.org/wiki/File:Viet_Nam_%E2%80%93_The_Colors_of_Traditional_Brocade_and_Silk_2.jpg" target="_blank" rel="noopener">Viet Nam – The Colors of Traditional Brocade and Silk 2</a> (
+Violaine Martin, CC BY-SA 4.0) · <a href="https://commons.wikimedia.org/wiki/File:Da_Lat_-_Cocooning_frame.jpg" target="_blank" rel="noopener">Da Lat - Cocooning frame</a> (P. Hughes, CC BY 4.0) · <a href="https://commons.wikimedia.org/wiki/File:Drying_the_cotton_silk_fabric.jpg" target="_blank" rel="noopener">Drying the cotton silk fabric</a> (Sopyaylynn, CC BY-SA 4.0) · <a href="https://commons.wikimedia.org/wiki/File:B%C3%ACnh_phong_kh%E1%BA%A3m_x%C3%A0_c%E1%BB%AB.jpg" target="_blank" rel="noopener">Bình phong khảm xà cừ</a> (Nguyenqa, CC BY-SA 4.0) · <a href="https://commons.wikimedia.org/wiki/File:Bawod_Chair.jpg" target="_blank" rel="noopener">Bawod Chair</a> (Bim24, CC0) · <a href="https://commons.wikimedia.org/wiki/File:Lace_cane_woven_chair_bottom.jpg" target="_blank" rel="noopener">Lace cane woven chair bottom</a> (Terasaface, CC BY-SA 4.0) · <a href="https://commons.wikimedia.org/wiki/File:Flechten_Sitzfl%C3%A4che_Stuhl.JPG" target="_blank" rel="noopener">Flechten Sitzfläche Stuhl</a> (4028mdk09, CC BY-SA 3.0) · <a href="https://commons.wikimedia.org/wiki/File:RATTAN_CHAIR_WITH_PAPERCRETE_POT.jpg" target="_blank" rel="noopener">RATTAN CHAIR WITH PAPERCRETE POT</a> (Atsmgysy2254, CC BY-SA 4.0) · <a href="https://commons.wikimedia.org/wiki/File:Echague_Isabela_October_4_2026_rattan_works_04.jpg" target="_blank" rel="noopener">Echague Isabela October 4 2026 rattan works 04</a> (P1898, CC BY 4.0).</p>
+</footer>
+
+</div>
+<section id="journeyView" class="journey-page" hidden></section>
+<section id="conceptView" class="journey-page" hidden></section>
+
+<div class="overlay" id="overlay" hidden></div>
+<aside class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer-head">
+    <h3>Giỏ hàng</h3>
+    <button id="closeCart" aria-label="Đóng">×</button>
+  </div>
+  <div id="cartItems" class="cart-items"></div>
+  <div class="drawer-foot">
+    <div class="total"><span>Tổng</span><strong id="cartTotal">US$0</strong></div>
+    <button class="btn primary full" id="checkoutBtn">Đặt hàng</button>
+    <p class="fine">Số lượng được giữ theo container. Đơn hàng không thể vượt số lượng còn lại.</p>
+  </div>
+</aside>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script src="app.js?v=12"></script>
+</body>
+</html>
