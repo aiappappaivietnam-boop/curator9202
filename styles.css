@@ -233,3 +233,36 @@ h3{font-size:24px}
 .container-diagram .cd-free rect{fill:none;stroke:var(--line);stroke-width:1.5}
 .container-diagram .cd-free text{fill:var(--muted)}
 .brand .tagline{display:block;font-family:var(--sans);font-size:10px;font-weight:400;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+
+.card-body .edition{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--terra);margin:0}
+.card-body .designer-line{font-size:14px;color:var(--muted);margin:-6px 0 0}
+.card-body .designer-line strong{color:var(--ink);font-weight:500}
+.card-body .specs span{font-size:12px}
+.jp-designer{font-size:15px;color:var(--muted);margin:-6px 0 14px}
+.jp-facts small{color:var(--muted)}
+.jp-section-title{font-family:var(--serif);font-weight:500;font-size:34px;margin:56px 0 8px}
+.trust{display:grid;grid-template-columns:1fr 1fr;gap:28px 40px;margin:48px 0 0;padding:40px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.trust-designer h2{font-family:var(--serif);font-weight:500;font-size:36px;margin:8px 0 2px}
+.trust-designer .role{color:var(--terra);font-size:14px;margin:0 0 14px}
+.trust-designer p{line-height:1.7}
+.trust-grid{grid-column:1/-1;display:grid;grid-template-columns:repeat(2,1fr);gap:0 40px;margin:0}
+.trust-grid div{padding:16px 0;border-top:1px solid var(--line)}
+.trust-grid dt{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.trust-grid dd{margin:0;font-size:15px;line-height:1.6}
+.certificate{grid-column:2;grid-row:1;margin:0}
+.cert-inner{background:#FBF8F2;border:1px solid var(--gold);outline:6px double rgba(201,162,75,.35);outline-offset:-14px;padding:30px 28px;text-align:center}
+.cert-brand{font-family:var(--serif);letter-spacing:.3em;font-size:13px;margin:0}
+.cert-title{font-family:var(--serif);font-style:italic;font-size:24px;margin:8px 0 14px}
+.cert-piece{font-size:13px;letter-spacing:.1em;text-transform:uppercase;margin:0}
+.cert-no{font-family:var(--serif);font-size:46px;margin:6px 0 12px;color:var(--terra)}
+.cert-inner dl{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:0 0 18px;font-size:11px}
+.cert-inner dt{color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+.cert-inner dd{margin:3px 0 0}
+.cert-sign span{display:block;font-family:"Brush Script MT",cursive;font-size:28px;border-bottom:1px solid var(--ink);width:70%;margin:0 auto 4px}
+.cert-sign small{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.certificate figcaption{font-size:13px;color:var(--muted);margin-top:12px}
+@media (max-width:760px){.trust,.trust-grid{grid-template-columns:1fr}.certificate{grid-column:1;grid-row:auto}}
+.mock-note{font-size:12px;color:var(--muted);margin-top:8px}
+.card-art img{object-position:center 35%}
+.jp-cover.product{aspect-ratio:auto;overflow:visible;background:var(--paper-2)}
+.jp-cover.product img{height:auto;max-height:78vh;object-fit:contain}

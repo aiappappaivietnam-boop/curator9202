@@ -6,7 +6,7 @@ const COLLECTIONS = [
   {
     id: "dong-ky-01",
     opens: "2026-10-20T20:00:00+07:00",
-    img: "images/dong-ky-design.jpg",
+    img: "images/products/dong-ky-cabinet.jpg",
     name: "Tủ Đồng Kỵ",
     type: "Tủ đứng 3 cánh",
     village: "Làng chạm gỗ Đồng Kỵ · Bắc Ninh",
@@ -14,6 +14,18 @@ const COLLECTIONS = [
     price: 5800,
     dims: "120 × 50 × 180 cm",
     weight: "45 kg",
+    title: "Đồng Kỵ Cabinet",
+    designer: "Minh Lê",
+    designerRole: "Nhà thiết kế nội thất, Hà Nội",
+    designerBio: "Minh Lê làm việc với làng nghề phía Bắc từ năm 2014, chuyên chuyển kỹ thuật chạm truyền thống thành khối phẳng đương đại.",
+    artisans: "Nghệ nhân Nguyễn Văn Hòa (chạm) · Trần Văn Lực (mộng và lắp ráp)",
+    hours: "186 giờ thủ công mỗi chiếc",
+    materials: "Gỗ óc chó (walnut) nhập khẩu có chứng nhận FSC® · tay nắm đồng thau đúc tay · hoàn thiện dầu tự nhiên",
+    origin: "Gỗ từ nhà cung cấp có chứng nhận FSC®, sấy khô 8 tuần tại xưởng Đồng Kỵ, Bắc Ninh.",
+    inch: `47.2" W × 19.7" D × 70.9" H`,
+    lb: "99 lb",
+    ship: "US$680 đến kho Mỹ/EU · bao gồm thùng gỗ xuất khẩu và bảo hiểm",
+    duty: "Ước tính 0–3,9% (HTS 9403.60) · tính khi thanh toán",
     capacity: 24,
     color: "#5E6B3E",
     art: "cabinet"
@@ -21,7 +33,7 @@ const COLLECTIONS = [
   {
     id: "bat-trang-02",
     opens: "2026-11-02T20:00:00+07:00",
-    img: "images/bat-trang-design.jpg",
+    img: "images/products/bat-trang-stool.jpg",
     name: "Ghế đôn Bát Tràng",
     type: "Ghế đôn men rạn",
     village: "Làng gốm Bát Tràng · Hà Nội",
@@ -29,6 +41,18 @@ const COLLECTIONS = [
     price: 5200,
     dims: "Ø 35 × 45 cm",
     weight: "6 kg",
+    title: "Bát Tràng Stool",
+    designer: "An Phạm",
+    designerRole: "Nhà thiết kế gốm, TP.HCM",
+    designerBio: "An Phạm nghiên cứu men rạn Bát Tràng từ năm 2016 và làm việc trực tiếp với các lò gốm gia đình trong làng.",
+    artisans: "Nghệ nhân Lê Thị Mai (vuốt dáng) · Phạm Văn Đức (pha men và nung)",
+    hours: "64 giờ thủ công · 2 lần nung ở 1.280°C",
+    materials: "Đất sét Bát Tràng · men rạn xanh ngọc pha tay · đế gỗ sồi trắng có chứng nhận FSC®",
+    origin: "Đất được nhào và ủ tại xưởng Bát Tràng; gỗ sồi từ nhà cung cấp có chứng nhận FSC®.",
+    inch: `Ø 13.8" × 17.7" H`,
+    lb: "13 lb",
+    ship: "US$320 đến kho Mỹ/EU · đóng thùng gỗ chống sốc riêng",
+    duty: "Ước tính 0–6% tùy nước nhận · tính khi thanh toán",
     capacity: 18,
     color: "#B5532F",
     art: "stool"
@@ -36,7 +60,7 @@ const COLLECTIONS = [
   {
     id: "van-phuc-03",
     opens: "2026-11-16T20:00:00+07:00",
-    img: "images/van-phuc.jpg",
+    img: "images/products/van-phuc-screen.jpg",
     name: "Bình phong Vạn Phúc",
     type: "Bình phong 3 khung lụa",
     village: "Làng lụa Vạn Phúc · Hà Nội",
@@ -44,6 +68,18 @@ const COLLECTIONS = [
     price: 7400,
     dims: "150 × 3 × 175 cm (3 khung)",
     weight: "14 kg",
+    title: "Vạn Phúc Screen",
+    designer: "Linh Đỗ",
+    designerRole: "Nhà thiết kế dệt may và nội thất, Hà Nội",
+    designerBio: "Linh Đỗ kết hợp dệt lụa tơ tằm với nội thất, làm việc cùng các khung cửi gia đình tại Vạn Phúc từ năm 2017.",
+    artisans: "Nghệ nhân Nguyễn Thị Hạnh (dệt) · Đỗ Văn Tâm (khung gỗ)",
+    hours: "142 giờ thủ công · 36 m lụa dệt tay",
+    materials: "Lụa tơ tằm dệt tay · khung gỗ tần bì (ash) có chứng nhận FSC® · bản lề đồng thau",
+    origin: "Tơ tằm ươm và dệt tại Vạn Phúc, Hà Nội; khung gỗ hoàn thiện tại xưởng Hà Nội.",
+    inch: `59.1" W × 1.2" D × 68.9" H (3 tấm)`,
+    lb: "31 lb",
+    ship: "US$540 đến kho Mỹ/EU · đóng thùng phẳng có khung chống ép",
+    duty: "Ước tính 0–4% tùy nước nhận · tính khi thanh toán",
     capacity: 30,
     color: "#1F2F4A",
     art: "screen"
@@ -51,7 +87,7 @@ const COLLECTIONS = [
   {
     id: "phu-vinh-04",
     opens: "2026-11-30T20:00:00+07:00",
-    img: "images/phu-vinh-design.jpg",
+    img: "images/products/phu-vinh-lounge.jpg",
     name: "Ghế mây tre Phú Vinh",
     type: "Ghế lounge mây tre",
     village: "Làng mây tre đan Phú Vinh · Hà Nội",
@@ -59,6 +95,18 @@ const COLLECTIONS = [
     price: 5600,
     dims: "70 × 75 × 80 cm",
     weight: "8 kg",
+    title: "Phú Vinh Lounge Chair",
+    designer: "Huy Trần",
+    designerRole: "Nhà thiết kế nội thất, Đà Nẵng",
+    designerBio: "Huy Trần thiết kế nội thất mây tre cho khách sạn và nhà ở, đưa kỹ thuật đan Phú Vinh vào dáng ghế tối giản.",
+    artisans: "Nghệ nhân Vũ Văn Bình (đan) · Nguyễn Thị Lan (xử lý mây)",
+    hours: "96 giờ thủ công · khoảng 1.400 sợi đan",
+    materials: "Mây tự nhiên và tre Phú Vinh · khung thép sơn tĩnh điện đen · đệm vải lanh",
+    origin: "Mây và tre được chọn, luộc và phơi tại Phú Vinh, Hà Nội; khung thép gia công tại Hà Nội.",
+    inch: `27.6" W × 29.5" D × 31.5" H`,
+    lb: "18 lb",
+    ship: "US$420 đến kho Mỹ/EU · đóng thùng nguyên khối",
+    duty: "Ước tính 0–4% tùy nước nhận · tính khi thanh toán",
     capacity: 20,
     color: "#C9A24B",
     art: "chair"
@@ -212,17 +260,19 @@ function renderGrid() {
     <article class="card ${closed ? "is-closed" : ""}">
       <a class="card-art" href="#hanh-trinh/${c.id}"><img src="${c.img}" alt="${c.name}" loading="lazy">${badge}</a>
       <div class="card-body">
-        <h3>${c.name}</h3>
+        <p class="edition">Limited Edition of ${c.capacity} · Numbered · Signed</p>
+        <h3>${c.title}</h3>
+        <p class="designer-line">Thiết kế bởi <strong>${c.designer}</strong></p>
         <p class="type">${c.type} · ${fmt(c.price)}</p>
-        <p class="specs">Kích thước: ${c.dims} · Cân nặng: ${c.weight}</p>
+        <p class="specs">${c.inch} · ${c.lb}<br><span>${c.dims} · ${c.weight}</span></p>
         <p>${c.desc}</p>
         <div class="meter">
-          <div class="meter-label"><span>Container ${c.capacity} sản phẩm · đánh số 01–${String(c.capacity).padStart(2, "0")}</span><span>${closed ? "Đã đóng" : `Đã bán ${sold}/${c.capacity}`}</span></div>
+          <div class="meter-label"><span>Edition 01–${String(c.capacity).padStart(2, "0")}</span><span>${closed ? "Đã đóng" : `Đã bán ${sold}/${c.capacity}`}</span></div>
           <div class="meter-track"><div class="meter-fill" style="width:${pct}%"></div></div>
         </div>
         <div class="serials">${serialTiles(c)}</div>
         ${launch}
-        ${closed ? `<div class="closed-note">Container đã đóng. Thiết kế này đã ngừng sản xuất và được lưu trữ, không tái bản.${next ? ` Thiết kế tiếp theo: <strong>${next.name}</strong>.` : ""}</div>` : ""}
+        ${closed ? `<div class="closed-note">Edition đã hoàn tất. Thiết kế này đã ngừng sản xuất và được lưu trữ, không tái bản.${next ? ` Thiết kế tiếp theo: <strong>${next.name}</strong>.` : ""}</div>` : ""}
         <a class="journey-btn" href="#hanh-trinh/${c.id}">Xem hành trình sản xuất →</a>
         ${inCart ? `<p class="incart">Trong giỏ: ${inCart} sản phẩm</p>` : ""}
         ${action}
@@ -245,7 +295,7 @@ function addToCart(id) {
   const c = COLLECTIONS.find(x => x.id === id);
   if (!c) return;
   if (isUpcoming(c)) return toast(`Thiết kế này mở bán vào ${opensLabel(c)}.`);
-  if (inCartOf(c) + soldOf(c) >= c.capacity) return toast("Đã hết sản phẩm trong container này.");
+  if (inCartOf(c) + soldOf(c) >= c.capacity) return toast("Phiên bản này đã hết số.");
   state.cart[c.id] = inCartOf(c) + 1;
   save(); renderAll(); toast(`Đã thêm ${c.name} · số ${String(soldOf(c) + inCartOf(c)).padStart(2, "0")}`);
 }
@@ -254,7 +304,7 @@ function changeQty(id, delta) {
   const c = COLLECTIONS.find(x => x.id === id);
   if (!c) return;
   const q = inCartOf(c) + delta;
-  if (delta > 0 && q + soldOf(c) > c.capacity) return toast("Đã hết sản phẩm trong container này.");
+  if (delta > 0 && q + soldOf(c) > c.capacity) return toast("Phiên bản này đã hết số.");
   if (q <= 0) delete state.cart[c.id]; else state.cart[c.id] = q;
   save(); renderAll();
 }
@@ -290,7 +340,7 @@ function checkout() {
   });
   state.cart = {};
   save(); renderAll(); closeCart();
-  toast(justClosed.length ? `Đơn đã ghi nhận. ${justClosed.join(", ")} vừa đóng container.` : "Đơn hàng đã được ghi nhận.");
+  toast(justClosed.length ? `Đơn đã ghi nhận. ${justClosed.join(", ")} vừa hoàn tất phiên bản.` : "Đơn hàng đã được ghi nhận.");
 }
 
 function renderAll() { renderGrid(); renderCart(); }
@@ -327,6 +377,44 @@ document.getElementById("closeCart").addEventListener("click", closeCart);
 document.getElementById("overlay").addEventListener("click", closeCart);
 document.getElementById("checkoutBtn").addEventListener("click", checkout);
 
+function trustBlock(c) {
+  const serial = String(Math.min(soldOf(c) + 1, c.capacity)).padStart(2, "0");
+  return `
+    <section class="trust">
+      <div class="trust-designer">
+        <p class="vp-kicker">Nhà thiết kế</p>
+        <h2>${c.designer}</h2>
+        <p class="role">${c.designerRole}</p>
+        <p>${c.designerBio}</p>
+      </div>
+      <dl class="trust-grid">
+        <div><dt>Nghệ nhân thực hiện</dt><dd>${c.artisans}</dd></div>
+        <div><dt>Thời gian thủ công</dt><dd>${c.hours}</dd></div>
+        <div><dt>Chất liệu</dt><dd>${c.materials}</dd></div>
+        <div><dt>Nguồn gốc</dt><dd>${c.origin}</dd></div>
+        <div><dt>Vận chuyển</dt><dd>${c.ship}</dd></div>
+        <div><dt>Thuế nhập khẩu</dt><dd>${c.duty}</dd></div>
+        <div><dt>Giao tận nhà</dt><dd>White-glove: đặt lịch giao, mang vào phòng, mở thùng, lắp đặt và thu gom bao bì. Thời gian 2–4 tuần từ kho Mỹ/EU.</dd></div>
+        <div><dt>Đổi trả</dt><dd>14 ngày kể từ khi nhận hàng. Hoàn tiền đầy đủ nếu hư hại khi vận chuyển; đổi ý: khách chịu phí gửi trả.</dd></div>
+      </dl>
+      <figure class="certificate" aria-label="Mẫu giấy chứng nhận chính hãng">
+        <div class="cert-inner">
+          <p class="cert-brand">CURATOR 9202</p>
+          <p class="cert-title">Certificate of Authenticity</p>
+          <p class="cert-piece">${c.title}</p>
+          <p class="cert-no">${serial} / ${String(c.capacity).padStart(2, "0")}</p>
+          <dl>
+            <div><dt>Designer</dt><dd>${c.designer}</dd></div>
+            <div><dt>Workshop</dt><dd>${c.village}</dd></div>
+            <div><dt>Handcrafted</dt><dd>${c.hours.split(" ·")[0]}</dd></div>
+          </dl>
+          <div class="cert-sign"><span>${c.designer}</span><small>Signature · Made in Vietnam</small></div>
+        </div>
+        <figcaption>Mỗi chiếc đi kèm giấy chứng nhận có số thứ tự, chữ ký nhà thiết kế và mã truy xuất.</figcaption>
+      </figure>
+    </section>`;
+}
+
 function renderJourneyPage(id) {
   const c = COLLECTIONS.find(x => x.id === id);
   const view = document.getElementById("journeyView");
@@ -336,20 +424,23 @@ function renderJourneyPage(id) {
   const status = closed ? "Lưu trữ · đã ngừng sản xuất" : upcoming ? `Mở bán ${opensLabel(c)}` : `Đã bán ${sold}/${c.capacity}`;
   view.innerHTML = `
     <a class="back" href="#collections">← Tất cả thiết kế</a>
-    <figure class="jp-cover"><img src="${c.img}" alt="${c.name}"></figure>
+    <figure class="jp-cover product"><img src="${c.img}" alt="${c.title}"><figcaption class="mock-note">Ảnh render mô phỏng thiết kế · ảnh chụp sản phẩm thật sẽ thay thế khi có mẫu.</figcaption></figure>
     <header class="jp-head">
-      <p class="origin">${c.village}</p>
-      <h1>${c.name}</h1>
+      <p class="origin">Limited Edition of ${c.capacity} · Numbered · Signed</p>
+      <h1>${c.title}</h1>
+      <p class="jp-designer">Thiết kế bởi ${c.designer} · ${c.village}</p>
       <p class="jp-lead">${c.desc}</p>
       <dl class="jp-facts">
         <div><dt>Loại sản phẩm</dt><dd>${c.type}</dd></div>
-        <div><dt>Container</dt><dd>${c.capacity} sản phẩm, đánh số 01–${String(c.capacity).padStart(2, "0")}</dd></div>
-        <div><dt>Kích thước</dt><dd>${c.dims}</dd></div>
-        <div><dt>Cân nặng</dt><dd>${c.weight}</dd></div>
+        <div><dt>Phiên bản</dt><dd>${c.capacity} chiếc, đánh số 01–${String(c.capacity).padStart(2, "0")}, có chữ ký</dd></div>
+        <div><dt>Kích thước</dt><dd>${c.inch}<br><small>${c.dims}</small></dd></div>
+        <div><dt>Cân nặng</dt><dd>${c.lb}<br><small>${c.weight}</small></dd></div>
         <div><dt>Trạng thái</dt><dd>${status}</dd></div>
         <div><dt>Giá</dt><dd>${fmt(c.price)}</dd></div>
       </dl>
     </header>
+    ${trustBlock(c)}
+    <h2 class="jp-section-title">Hành trình thực hiện</h2>
     <ol class="jp-timeline">${JOURNEYS[c.id].map((st, i) => {
       const n = String(i + 1).padStart(2, "0");
       return `
